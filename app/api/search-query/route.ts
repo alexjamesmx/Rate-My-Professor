@@ -71,21 +71,21 @@ export async function POST(req: NextRequest) {
 
   console.log("Query API: professor search", results);
 
-  const responseContent = {
-    role: "user",
-    content: JSON.stringify({
-      introduction: "Here are some professors based on your query.",
-      isProfessorQuery: true,
-      professors: results,
-      conclusion:
-        "Let me know if you need more information or other recommendations.",
-    }),
-  };
-
   // Return the final response content
   const completion = await openai.chat.completions.create({
-    messages: [{ role: "system", content: systemPrompt }, responseContent],
     model: "gpt-4o-mini",
+    messages: [
+      { role: "system", content: systemPrompt },
+      {
+        role: "user",
+        content: `{
+        "introduction": "Here are some professors based on your query.",
+        "isProfessorQuery": true,
+        "professors": ${JSON.stringify(results)},
+        "conclusion": "Let me know if you need more information or other recommendations."
+      }`,
+      },
+    ],
     stream: true,
   });
 
