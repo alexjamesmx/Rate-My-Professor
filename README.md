@@ -16,7 +16,7 @@
 > </p>
 > ~
 
-> <h3 align="center">Project 5: AI Chatbot</h3>
+> <h3 align="center">Hackathon: AI Chatbot</h3>
 > <p align="center">This project focuses on building a powerful AI chatbot utilizing a vector search engine (Pinecone is a recommended option) for data storage and retrieval (RAG). The chatbot's functionality can be tailored to various use cases, providing users with an interactive and informative experience.</p>
 
 </div>
