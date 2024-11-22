@@ -1,5 +1,3 @@
-# RAG AI Chatbot
-
 <div id="top"></div>
 <h1 align="center">Rate my professor</h1>
 
