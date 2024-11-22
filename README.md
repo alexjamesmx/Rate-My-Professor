@@ -20,3 +20,26 @@
 > <p align="center">This project focuses on building a powerful AI chatbot utilizing a vector search engine (Pinecone is a recommended option) for data storage and retrieval (RAG). The chatbot's functionality can be tailored to various use cases, providing users with an interactive and informative experience.</p>
 
 </div>
+
+## Prerequisites
+
+- **Openai key**: Create openai account, set billing info and get a secret key.
+- **Pinecone key**: Create a [pinecone account](https://www.pinecone.io/) and get key.
+- **Clerk key**: Create a [clerk account](https://clerk.com/) and get secret key
+- **IDE**: Optional. [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is recommended.
+
+## Setup
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/alexjamesmx/Rate-My-Professor
+   ```
+
+2. Change the directory and install the required libraries:
+
+   ```sh
+   cd Rate-My-Professor
+   copy .env.local.example to .env.local and fill values
+   npm install
+   ```
