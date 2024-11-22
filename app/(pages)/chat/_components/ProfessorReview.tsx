@@ -147,35 +147,35 @@ const ProfessorReview: React.FC = () => {
     switch (true) {
       case searchProfessorName !== "" &&
         searchSubject !== "" &&
-        searchRating !== "":
+        searchRating !== undefined:
         promptQuery = `Searching for Professor ${searchProfessorName} who teaches ${searchSubject} with an overall rating of ${searchRating}`;
         break;
       case searchProfessorName !== "" &&
         searchSubject !== "" &&
-        searchRating === "":
+        searchRating === undefined:
         promptQuery = `Searching for Professor ${searchProfessorName} who teaches ${searchSubject}`;
         break;
       case searchSubject !== "" &&
-        searchRating !== "" &&
+        searchRating !== undefined &&
         searchProfessorName === "":
         promptQuery = `Searching for Professors who teach ${searchSubject} with an overall rating of ${searchRating} stars`;
         break;
       case searchProfessorName !== "" &&
-        searchRating !== "" &&
+        searchRating !== undefined &&
         searchSubject === "":
         promptQuery = `Searching for Professor ${searchProfessorName} with an overall rating of ${searchRating} stars`;
         break;
       case searchProfessorName !== "" &&
         searchSubject === "" &&
-        searchRating === "":
+        searchRating === undefined:
         promptQuery = `Searching for Professor ${searchProfessorName}`;
         break;
       case searchSubject !== "" &&
         searchProfessorName === "" &&
-        searchRating === "":
+        searchRating === undefined:
         promptQuery = `Searching for Professors who teach ${searchSubject}`;
         break;
-      case searchRating !== "" &&
+      case searchRating !== undefined &&
         searchProfessorName === "" &&
         searchSubject === "":
         promptQuery = `Searching for Professors with an overall rating of ${searchRating} stars`;
