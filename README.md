@@ -43,3 +43,10 @@
    copy .env.local.example to .env.local and fill values
    npm install
    ```
+
+3. Change the directory and install the required libraries:
+
+   ```sh
+    npm run build
+    npm run dev
+   ```
