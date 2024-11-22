@@ -7,7 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "RateMyProf AI",
-  description: "created by @shafi & @alex",
+  description: "Chat bot powered with AI + RAG to rate professors",
+  authors: [
+    { name: "alexjamesmx", url: "https://alexjamesmx.dev" },
+    { name: "shafi", url: "https://iamshafi-portfolio.vercel.app/" },
+  ],
 };
 
 export default function RootLayout({
